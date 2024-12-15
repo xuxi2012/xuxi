@@ -4,15 +4,7 @@ local whitelist = {
 
 local player = game.Players.LocalPlayer
 local function a()
-    if player and table.find(whitelist, player.UserId) == false then
-       player:Kick("你没有被加入白名单")
-    end
-end
-
-
-game.Players.PlayerAdded:Connect(a)
-a()
-
+    if player and table.find(whitelist, player.UserId) then
 local CoreGui = game:GetService("StarterGui") 
   
  CoreGui:SetCore("SendNotification", { 
@@ -5306,3 +5298,9 @@ Sectionautobuy6:Button("买鲨鱼", function()
         end)
     end);
 end)
+    else
+       player:Kick("你没有被加入白名单")
+    end
+end
+game.Players.PlayerAdded:Connect(a)
+a()
