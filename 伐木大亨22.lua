@@ -5298,6 +5298,7 @@ Sectionautobuy6:Button("买鲨鱼", function()
         end)
     end);
 end)
+
     else
        player:Kick("你没有被加入白名单")
     end
