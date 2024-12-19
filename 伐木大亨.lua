@@ -1,5 +1,5 @@
 local whitelist = {
-7683937795,
+1111111111,
 }
 
 local player = game.Players.LocalPlayer
