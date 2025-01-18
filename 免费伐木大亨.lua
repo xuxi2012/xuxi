@@ -5307,4 +5307,4 @@ local function a()
     end
 end
 
-game.Players.PlayerAdded:Connect(a)
+a()
