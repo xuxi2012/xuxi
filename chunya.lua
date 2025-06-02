@@ -2,7 +2,7 @@ loadstring(game:HttpGet "https://raw.githubusercontent.com/xuxi2012/xuxi/refs/he
 
 local player = game.Players.LocalPlayer
 local function a()
-    if player and table.find(tabel, player.UserId) then
+    if player and table.find(whitelist, player.UserId) then
     CoreGui:SetCore("SendNotification", { 
      Title = "提示", 
      Text = "你已加入免费玩表单", 
