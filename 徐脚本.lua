@@ -244,6 +244,7 @@ button11.Parent = frame3
 button11.Position = UDim2.new()
 button11.Size = UDim2.new(1, 0, 0.1, 0)
 button11.Text = "打开Butter脚本"
+button11.TextScaled = true
 button11.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
 button11.TextColor3 = Color3.fromRGB(250, 250, 250)
 button11.BorderColor3 = Color3.fromRGB(0, 255, 255)
