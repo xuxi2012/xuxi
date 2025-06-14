@@ -281,6 +281,6 @@ button22.TextColor3 = Color3.fromRGB(250, 250, 250)
 button22.Text = "点击打开免费徐脚本--伐木"
 button22.BorderColor3 = Color3.fromRGB(0, 255, 255)
 button22.MouseButton1Click:Connect(function()
-loadstring(game:HttpGet "https://raw.githubusercontent.com/xuxi2012/xuxi/refs/heads/main/freexu.lua")()
+--loadstring(game:HttpGet "https://raw.githubusercontent.com/xuxi2012/xuxi/refs/heads/main/freexu.lua")()
 ScreenGui.Parent = nil
 end)
