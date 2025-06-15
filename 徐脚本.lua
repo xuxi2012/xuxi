@@ -286,6 +286,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter-C
 ScreenGui.Parent = nil
 end)
 
+button30.Parent = frame1
+button30.Position = UDim2.new()
+button30.Size = UDim2.new()
+button30.Text = "点击复制群号"
+
 button20.Parent = frame
 button20.TextScaled = true
 button20.Position = UDim2.new(0, 0, 0.59, 0)
