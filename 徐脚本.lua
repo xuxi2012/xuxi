@@ -152,7 +152,7 @@ TextLabel3.TextScaled = true
     else
         return "Roblox Official Client (无注入器)"
     end
-end]]--
+end
 
 TextLabel16.Name = "c"
 --TextLabel16.Text = "当前注入器："..getInjector()
@@ -161,7 +161,7 @@ TextLabel16.Position = UDim2.new(0, 0, 0.384, 0)
 TextLabel16.Size = UDim2.new(1, 0, 0.128, 0)
 TextLabel16.TextColor3 = Color3.fromRGB(250, 250, 250)
 TextLabel16.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
-TextLabel6.TextScaled = true
+TextLabel6.TextScaled = true]]--
 
 TextLabel10.Name = "提示"
 TextLabel10.Parent = frame2
