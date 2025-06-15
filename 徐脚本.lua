@@ -69,6 +69,7 @@ local TextLabel2 = Instance.new("TextLabel")
 local TextLabel3 = Instance.new("TextLabel")
 local TextLabel10 = Instance.new("TextLabel")
 local TextLabel11 = Instance.new("TextLabel")
+local TextLabel16 = Instance.new("TextLabel")
 local TextLabel20 = Instance.new("TextLabel")
 local TextLabel22 = Instance.new("TextLabel")
 local button10 = Instance.new("TextButton")
@@ -132,6 +133,36 @@ TextLabel3.Size = UDim2.new(1, 0, 0.128, 0)
 TextLabel3.TextColor3 = Color3.fromRGB(250, 250, 250)
 TextLabel3.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
 TextLabel3.TextScaled = true
+
+local function getInjector()
+    -- 检查各种注入器的特征
+    if syn and syn.protect_gui then
+        return "Synapse X"
+    elseif identifyexecutor and identifyexecutor() == "ScriptWare" then
+        return "Script-Ware"
+    elseif KRNL_LOADED then
+        return "Krnl"
+    elseif is_sirhurt_closure then
+        return "SirHurt"
+    elseif secure_load then
+        return "ProtoSmasher"
+    elseif pebc_execute then
+        return "Electron"
+    elseif getexecutorname then
+        return getexecutorname() or "Unknown Executor"
+    else
+        return "Roblox Official Client (无注入器)"
+    end
+end
+
+TextLabel16.Name = "注入器"
+TextLabel16.Text = "当前注入器："..getInjector()
+TextLabel16.Parent = frame1
+TextLabel16.Position = UDim2.new(0, 0, 0.384, 0)
+TextLabel16.Size = UDim2.new(1, 0, 0.128, 0)
+TextLabel16.TextColor3 = Color3.fromRGB(250, 250, 250)
+TextLabel16.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
+TextLabel6.TextScaled = true
 
 TextLabel10.Name = "提示"
 TextLabel10.Parent = frame2
