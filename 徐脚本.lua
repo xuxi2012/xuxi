@@ -287,8 +287,8 @@ ScreenGui.Parent = nil
 end)
 
 button30.Parent = frame1
-button30.Position = UDim2.new()
-button30.Size = UDim2.new()
+button30.Position = UDim2.new(0, 0, 0.511, 0)
+button30.Size = UDim2.new(1, 0, 0.128, 0)
 button30.Text = "点击复制群号"
 button30.TextScaled = true
 button30.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
