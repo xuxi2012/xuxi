@@ -2,7 +2,7 @@ local CoreGui = game:GetService("StarterGui")
   
  CoreGui:SetCore("SendNotification", { 
      Title = "", 
-     Text = "欢迎你用徐脚本", 
+     Text = "欢迎你用徐脚本1", 
      Duration = 10,  
  })
  CoreGui:SetCore("SendNotification", { 
