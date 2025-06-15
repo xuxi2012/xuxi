@@ -134,7 +134,7 @@ TextLabel3.TextColor3 = Color3.fromRGB(250, 250, 250)
 TextLabel3.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
 TextLabel3.TextScaled = true
 
-local function getInjector()
+--[[local function getInjector()
     if syn and syn.protect_gui then
         return "Synapse X"
     elseif identifyexecutor and identifyexecutor() == "ScriptWare" then
@@ -152,7 +152,7 @@ local function getInjector()
     else
         return "Roblox Official Client (无注入器)"
     end
-end
+end]]--
 
 TextLabel16.Name = "c"
 TextLabel16.Text = "当前注入器："..getInjector()
