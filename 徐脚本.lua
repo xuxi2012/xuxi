@@ -155,7 +155,7 @@ local function getInjector()
 end
 
 TextLabel16.Name = "c"
---TextLabel16.Text = "当前注入器："..getInjector()
+TextLabel16.Text = "当前注入器："..getInjector()
 TextLabel16.Parent = frame1
 TextLabel16.Position = UDim2.new(0, 0, 0.384, 0)
 TextLabel16.Size = UDim2.new(1, 0, 0.128, 0)
