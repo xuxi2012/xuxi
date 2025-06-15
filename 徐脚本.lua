@@ -290,6 +290,17 @@ button30.Parent = frame1
 button30.Position = UDim2.new()
 button30.Size = UDim2.new()
 button30.Text = "点击复制群号"
+button30.TextScaled = true
+button30.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
+button30.TextColor3 = Color3.fromRGB(250, 250, 250)
+button30.BorderColor3 = Color3.fromRGB(0, 255, 255)
+button30.MouseButton1Click:Connect(function()
+  local chunya = "1030473092"
+  game:GetService("StarterGui"):SetClipboard(chunya)
+    button30.Text = "代码已复制！"
+    task.wait(3)
+    button30.Text = "点击复制"
+  end)
 
 button20.Parent = frame
 button20.TextScaled = true
