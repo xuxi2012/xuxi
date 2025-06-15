@@ -285,9 +285,6 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter-C
 ScreenGui.Parent = nil
 end)
 
-local chunya = "1030473092"
-game:GetService("StarterGui"):SetClipboard(chunya)
-
 button20.Parent = frame
 button20.TextScaled = true
 button20.Position = UDim2.new(0, 0, 0.59, 0)
