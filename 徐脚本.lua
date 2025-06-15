@@ -135,7 +135,6 @@ TextLabel3.BackgroundColor3 = Color3.fromRGB(30, 30, 32)
 TextLabel3.TextScaled = true
 
 local function getInjector()
-    -- 检查各种注入器的特征
     if syn and syn.protect_gui then
         return "Synapse X"
     elseif identifyexecutor and identifyexecutor() == "ScriptWare" then
@@ -155,7 +154,7 @@ local function getInjector()
     end
 end
 
-TextLabel16.Name = "注入器"
+TextLabel16.Name = "c"
 TextLabel16.Text = "当前注入器："..getInjector()
 TextLabel16.Parent = frame1
 TextLabel16.Position = UDim2.new(0, 0, 0.384, 0)
