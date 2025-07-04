@@ -3,6 +3,13 @@
 
 -- Instances:
 
+local coregui = game:GetService("StarterGui")
+coregui:SetCore("SendNotification", {
+	Title = "欢迎！",
+	Text = "徐脚本v3.0.0",
+	Duration = 10,
+})
+
 local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
